@@ -1,15 +1,16 @@
-package com.xbcxs.test;
+package com.xbcxs.service;
 
 import com.xbcxs.extend.ExtendFactory;
-import com.xbcxs.service.AbcExtend;
+import org.junit.Test;
 
 /**
  * @author xiaosh
- * @date 2019/9/18
+ * @date 2019/10/15
  */
-public class MainTest {
+public class ExtendTest {
 
-    public static void main(String[] args) throws Exception {
+    @Test
+    public void test(){
         AbcExtend abcExtend = (AbcExtend) ExtendFactory.getExtendInstance(AbcExtend.class);
         abcExtend.event1();
     }

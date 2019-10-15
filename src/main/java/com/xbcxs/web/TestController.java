@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
+ * 1.可返回页面，必须配合页面模板使用如(thymeleaf,等)
+ * 2.@Controller + @ResponseBody = @RestController
  * @author xiaosh
  * @date 2019/9/20
  */

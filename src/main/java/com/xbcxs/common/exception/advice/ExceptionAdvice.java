@@ -25,7 +25,9 @@ public class ExceptionAdvice {
     @ResponseBody
     public void handException(HttpServletResponse response, CheckedException e) {
         e.printStackTrace();
+        // 参数信息
         log.error(e.getMessage());
+        // 日志记录到磁盘
         log.debug("异常:", e);
         ResponseWriter.writer(response, HttpResult.error(e.getCode(), e.getMessage()));
     }
