@@ -1,7 +1,7 @@
 package com.xbcxs.test;
 
-import com.xbcxs.extend.ExtendFactory;
-import com.xbcxs.service.AbcExtend;
+import com.xbcxs.common.extend.ExtendFactory;
+import com.xbcxs.common.extend.test.AbcExtend;
 
 /**
  * @author xiaosh
@@ -11,6 +11,6 @@ public class MainTest {
 
     public static void main(String[] args) throws Exception {
         AbcExtend abcExtend = (AbcExtend) ExtendFactory.getExtendInstance(AbcExtend.class);
-        abcExtend.event1();
+        abcExtend.method1();
     }
 }

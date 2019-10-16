@@ -1,4 +1,4 @@
-package com.xbcxs.service;
+package com.xbcxs.common.extend.test;
 
 /**
  * @author xiaosh
@@ -6,6 +6,6 @@ package com.xbcxs.service;
  */
 public interface AbcExtend {
 
-    Object event1();
+    Object method1();
 
 }

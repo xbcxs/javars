@@ -37,8 +37,14 @@ public class TestController {
     }
 
     @RequestMapping("page3")
+    public String page3(HttpServletResponse response){
+        log.debug("test/page3...");
+        return "static/staticTest.html";
+    }
+
+    @RequestMapping("page4")
     @ResponseBody
-    public String page3(@RequestBody Map map){
+    public String page4(@RequestBody Map map){
 
         return HttpResult.success("成功3");
     }

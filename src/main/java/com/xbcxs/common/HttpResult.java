@@ -3,8 +3,6 @@ package com.xbcxs.common;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 
-import javax.servlet.http.HttpServletResponse;
-
 /**
  * HTTP/JSON数据封装
  * @author xiaosh
@@ -47,15 +45,15 @@ public class HttpResult<T>  {
     }
 
     public static <T> String success(String message, T data) {
-        return new HttpResult(HttpServletResponse.SC_OK, message, data).toJSONString();
+        return new HttpResult(1, message, data).toJSONString();
     }
 
     public static <T> String success(T data) {
-        return new HttpResult(HttpServletResponse.SC_OK, "success!", data).toJSONString();
+        return new HttpResult(1, "success!", data).toJSONString();
     }
 
     public static String error(String message) {
-        return new HttpResult(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, message, null).toJSONString();
+        return new HttpResult(0, message, null).toJSONString();
     }
 
     public static String error(Integer code, String message) {

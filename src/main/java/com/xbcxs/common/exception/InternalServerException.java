@@ -10,7 +10,7 @@ import com.xbcxs.common.exception.base.UncheckedException;
 public class InternalServerException extends UncheckedException {
 
     public InternalServerException(String message) {
-        super(1103, message);
+        super(message);
     }
 
     public InternalServerException(Integer code, String message) {

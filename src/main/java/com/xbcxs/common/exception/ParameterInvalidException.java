@@ -10,7 +10,7 @@ import com.xbcxs.common.exception.base.UncheckedException;
 public class ParameterInvalidException extends UncheckedException {
 
     public ParameterInvalidException(String message) {
-        super(1101, message);
+        super(message);
     }
 
     public ParameterInvalidException(Integer code, String message) {

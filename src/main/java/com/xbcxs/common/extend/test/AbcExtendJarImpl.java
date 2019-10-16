@@ -1,4 +1,4 @@
-package com.xbcxs.service;
+package com.xbcxs.common.extend.test;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +12,7 @@ public class AbcExtendJarImpl implements AbcExtend {
     private static Logger log = LoggerFactory.getLogger(AbcExtend.class);
 
     @Override
-    public Object event1() {
+    public Object method1() {
         log.debug("come AbcExtendJarImpl...");
         return null;
     }

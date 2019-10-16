@@ -1,4 +1,4 @@
-package com.xbcxs.extend;
+package com.xbcxs.common.extend;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -14,18 +14,18 @@ public class ExtendDaoImpl implements ExtendDao {
 
         // 模拟获取Http实现类型数据对象
         /*ExtendDO edo = new ExtendDO();
-        edo.setInterfaceName("com.xbcxs.service.AbcExtend");
+        edo.setInterfaceName(interfaceName);
         edo.setImplClassName("com.xbcxs.service.AbcExtendJarImpl");
         edo.setType(ExtendTypeEnum.JAR.toString());*/
 
         // 模拟获取Http实现类型数据对象
         ExtendDO edo = new ExtendDO();
-        edo.setInterfaceName("com.xbcxs.service.AbcExtend");
-        edo.setImplClassName("com.xbcxs.service.AbcExtendHttpImpl");
+        edo.setInterfaceName(interfaceName);
+        edo.setImplClassName("com.xbcxs.common.extend.test.AbcExtendHttpImpl");
         edo.setType(ExtendTypeEnum.HTTP.toString());
         JSONObject methods = new JSONObject();
-        methods.put("method1", "{KE}/aaa/bbb");
-        methods.put("method2", "http://192.168.1.1:8000/p2m/aaa/bbb");
+        methods.put("method1", "https://www.baidu.com");
+        methods.put("method2", "{KE}/aaa/bbb");
         edo.setMethods(methods);
         return edo;
     }

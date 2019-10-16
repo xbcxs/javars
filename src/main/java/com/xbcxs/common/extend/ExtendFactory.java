@@ -1,4 +1,4 @@
-package com.xbcxs.extend;
+package com.xbcxs.common.extend;
 
 import com.xbcxs.common.exception.DataNotFoundException;
 
@@ -26,13 +26,13 @@ public class ExtendFactory {
                 object = Class.forName(extendDo.getImplClassName()).newInstance();
             } catch (InstantiationException e) {
                 e.printStackTrace();
-                throw new DataNotFoundException("Class.forName(extendDo.getImplClassName()),参数：" + extendDo.getImplClassName() + "不存在");
+                throw new DataNotFoundException(e.getMessage() + "；[参数implClassName：]" + extendDo.getImplClassName());
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
-                throw new DataNotFoundException("Class.forName(extendDo.getImplClassName()),IllegalAccessException.");
+                throw new DataNotFoundException(e.getMessage() + "；[参数implClassName：]" + extendDo.getImplClassName());
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
-                throw new DataNotFoundException("Class.forName(extendDo.getImplClassName()),ClassNotFoundException. 参数：" + extendDo.getImplClassName() + "不存在");
+                throw new DataNotFoundException(e.getMessage() + "；[参数implClassName：]" + extendDo.getImplClassName() + "不存在！");
             }
         }
         return object;

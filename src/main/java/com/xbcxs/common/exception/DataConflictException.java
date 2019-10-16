@@ -9,7 +9,7 @@ import com.xbcxs.common.exception.base.UncheckedException;
  */
 public class DataConflictException extends UncheckedException {
     public DataConflictException(String message) {
-        super(1105, message);
+        super(message);
     }
 
     public DataConflictException(Integer code, String message) {

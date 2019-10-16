@@ -9,7 +9,7 @@ import com.xbcxs.common.exception.base.CheckedException;
 public class BusinessCheckedException extends CheckedException {
 
     public BusinessCheckedException(String message) {
-        super(1002, message);
+        super(message);
     }
 
     public BusinessCheckedException(Integer code, String message) {

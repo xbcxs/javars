@@ -9,7 +9,7 @@ import com.xbcxs.common.exception.base.UncheckedException;
 public class BusinessUncheckedException extends UncheckedException {
 
     public BusinessUncheckedException(String message) {
-        super(1001, message);
+        super(message);
     }
 
     public BusinessUncheckedException(Integer code, String message) {

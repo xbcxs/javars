@@ -10,7 +10,7 @@ import com.xbcxs.common.exception.base.UncheckedException;
 public class DataNotFoundException extends UncheckedException {
 
     public DataNotFoundException(String message) {
-        super(1104, message);
+        super(message);
     }
 
     public DataNotFoundException(Integer code, String message) {

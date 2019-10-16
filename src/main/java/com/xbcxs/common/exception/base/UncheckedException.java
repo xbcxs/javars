@@ -8,7 +8,7 @@ import com.xbcxs.common.i18n.InternationalizationConfig;
  */
 public class UncheckedException extends RuntimeException{
 
-    private Integer code;
+    private Integer code = 0;
 
     public Integer getCode() {
         return code;
@@ -23,4 +23,12 @@ public class UncheckedException extends RuntimeException{
         this.code = code;
     }
 
+    public UncheckedException(String message, Object[] params) {
+        super(InternationalizationConfig.getFormatString(message, params));
+    }
+
+    public UncheckedException(Integer code, String message, Object[] params) {
+        super(InternationalizationConfig.getFormatString(message, params));
+        this.code = code;
+    }
 }

@@ -1,4 +1,4 @@
-package com.xbcxs.extend;
+package com.xbcxs.common.extend;
 
 /**
  * Manager接口

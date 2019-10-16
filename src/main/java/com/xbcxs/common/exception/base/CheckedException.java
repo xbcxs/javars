@@ -8,7 +8,7 @@ import com.xbcxs.common.i18n.InternationalizationConfig;
  */
 public class CheckedException extends Exception{
 
-    private Integer code;
+    private Integer code = 0;
 
     public Integer getCode() {
         return code;
@@ -20,6 +20,15 @@ public class CheckedException extends Exception{
 
     public CheckedException(Integer code, String message) {
         super(InternationalizationConfig.getString(message));
+        this.code = code;
+    }
+
+    public CheckedException(String message, Object[] params) {
+        super(InternationalizationConfig.getFormatString(message, params));
+    }
+
+    public CheckedException(Integer code, String message, Object[] params) {
+        super(InternationalizationConfig.getFormatString(message, params));
         this.code = code;
     }
 }

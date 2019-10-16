@@ -1,9 +1,13 @@
-package com.xbcxs.extend;
+package com.xbcxs.common.extend;
 
 import com.alibaba.fastjson.JSONObject;
 import com.xbcxs.common.exception.DataNotFoundException;
+import org.apache.http.client.fluent.Content;
+import org.apache.http.client.fluent.Request;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
 
 /**
  * @author xiaosh
@@ -18,35 +22,38 @@ public class HttpClientManagerImpl implements HttpClientManager{
     }
 
     @Override
-    public JSONObject get() {
+    public Content get() {
         String interfaceName = getInterfaceName();
         String methodName = getMethodName();
-        log.debug("interfaceName:{}", interfaceName);
-        log.debug("methodName:{}", methodName);
+        log.debug("interfaceName:{}。 methodName:{}", interfaceName, methodName);
 
         ExtendDO extendDo = getExtendManager().getExtendDO(interfaceName);
         String url = String.valueOf(extendDo.getMethods().get(methodName));
         // TODO URL 占位符替换
+        Content content = null;
+        try {
+            content = Request.Get(url).execute().returnContent();
+            log.debug("content:" + content);
+        } catch (IOException e) {
+            throw new DataNotFoundException(e.getMessage() + "--httpClient请求失败，[参数URL]：" + url);
+        }
+        return content;
+    }
 
-        // TODO 执行httpClient GET
+    @Override
+    public Content get(JSONObject params) {
 
         return null;
     }
 
     @Override
-    public JSONObject get(JSONObject params) {
+    public Content post() {
 
         return null;
     }
 
     @Override
-    public JSONObject post() {
-
-        return null;
-    }
-
-    @Override
-    public JSONObject post(JSONObject params) {
+    public Content post(JSONObject params) {
 
         return null;
     }

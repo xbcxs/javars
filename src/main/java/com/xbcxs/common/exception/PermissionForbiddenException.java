@@ -9,7 +9,7 @@ import com.xbcxs.common.exception.base.UncheckedException;
  */
 public class PermissionForbiddenException extends UncheckedException {
     public PermissionForbiddenException(String message) {
-        super(1102, message);
+        super(message);
     }
 
     public PermissionForbiddenException(Integer code, String message) {
