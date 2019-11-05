@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，
+<!--
+Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，
 你会看到log4j2内部各种详细输出。可以设置成OFF(关闭) 或 Error(只输出错误信息)。
 30s 刷新此配置
 -->
