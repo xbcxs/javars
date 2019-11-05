@@ -8,7 +8,7 @@ import org.apache.http.client.fluent.Content;
  * @author xiaosh
  * @date 2019/10/14
  */
-public class AbcExtendHttpImpl implements AbcExtend {
+public class AbcExtenderHttpImpl implements AbcExtender {
 
     private HttpClientManager getHttpClientManager() {
         return new HttpClientManagerImpl();

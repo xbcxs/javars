@@ -11,6 +11,8 @@ public class JavarsApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
+		new Thread();
 	}
 
 }

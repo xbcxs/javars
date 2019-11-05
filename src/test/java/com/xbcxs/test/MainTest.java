@@ -1,7 +1,6 @@
 package com.xbcxs.test;
 
-import com.xbcxs.common.extend.ExtendFactory;
-import com.xbcxs.common.extend.test.AbcExtend;
+import java.util.Properties;
 
 /**
  * @author xiaosh
@@ -10,7 +9,17 @@ import com.xbcxs.common.extend.test.AbcExtend;
 public class MainTest {
 
     public static void main(String[] args) throws Exception {
-        AbcExtend abcExtend = (AbcExtend) ExtendFactory.getExtendInstance(AbcExtend.class);
-        abcExtend.method1();
+//        AbcExtender abcExtender = (AbcExtender) ExtendFactory.getExtendInstance(AbcExtender.class);
+//        abcExtender.method1();
+
+        Properties initProp = new Properties(System.getProperties());
+        System.out.println("当前系统编码:" + initProp.getProperty("file.encoding"));
+        System.out.println("当前系统语言:" + initProp.getProperty("user.language"));
+        System.out.println(System.getProperty("file.encoding") );
+
+        String charset = "UTF-8";//假定编码格式
+        String str = "中文";
+        boolean flag = str.equals(new String(str.getBytes(),charset));
+        System.out.println(flag);
     }
 }
