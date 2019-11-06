@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<menus xmlns="http://www.sysware.com/eap/menu"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sysware.com/eap/menu http://www.sysware.com/eap/menu/menu.xsd">
+    <menu>
+        <uri></uri>
+        <description></description>
+    </menu>
+    <menu>
+        <uri></uri>
+        <description></description>
+    </menu>
+    <menu>
+        <uri></uri>
+        <description></description>
+    </menu>
+    <menu>
+        <uri></uri>
+        <description></description>
+    </menu>
+
+</menus>
+

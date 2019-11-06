@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.sysware.com/eap/menu"
+           xmlns="http://www.sysware.com/eap/menu"
+           elementFormDefault="qualified">
+
+    <xs:element name="menus" type="menuinfo"/>
+    <xs:complexType name="menuinfo">
+        <xs:sequence>
+            <xs:element ref="menu" maxOccurs="1000"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+    <xs:element name="menu">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="uri" type="xs:string"/>
+            <xs:element name="name" type="xs:string" minOccurs="0"/>
+            <xs:element name="code" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+
+</xs:schema>
