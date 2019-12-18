@@ -6,15 +6,15 @@ package com.xbcxs.common.pool;
  */
 public class Connection {
 
-    long bornTimeValue;
+    long bornTime;
 
     public Connection(){
-        bornTimeValue = System.currentTimeMillis();
+        bornTime = System.currentTimeMillis();
     }
+
     public void close(){
-        Connection c = this;
-        PoolFactory.busyList.remove(c);
-        PoolFactory.leisureQueue.offer(c);
+        PoolFactory.availableConnectionQueue.offer(this);
+        PoolFactory.activeConnectionCount.decrementAndGet();
     }
 
 }
