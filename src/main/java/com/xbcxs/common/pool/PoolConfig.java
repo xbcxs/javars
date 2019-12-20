@@ -14,7 +14,7 @@ public class PoolConfig {
     /** 最大连接数 */
     private int maxConnectionCount;
 
-    /** 连接池中可用连接数 */
+    /** 连接池中保持可用连接数 */
     private int sparedConnectionCount;
 
     /** 连接对象存活时间 */
@@ -35,9 +35,9 @@ public class PoolConfig {
         this.minConnectionCount = 5;
         this.maxConnectionCount = 30;
         this.sparedConnectionCount = 5;
-        this.connectionLifetime = 300 * 1000;
+        this.connectionLifetime = 30 * 1000;
         this.connectionCheckInterval = 3 * 1000;
-        this.acquireConnectionTimeout = 300 * 1000;
+        this.acquireConnectionTimeout = 3000;
 
         // 对各参数进行边界截取
     }

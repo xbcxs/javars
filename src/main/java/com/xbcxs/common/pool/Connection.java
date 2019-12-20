@@ -8,13 +8,15 @@ public class Connection {
 
     long bornTime;
 
-    public Connection(){
+    public Connection() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         bornTime = System.currentTimeMillis();
     }
 
-    public void close(){
-        PoolFactory.availableConnectionQueue.offer(this);
-        PoolFactory.activeConnectionCount.decrementAndGet();
-    }
+
 
 }
