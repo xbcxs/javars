@@ -1,0 +1,232 @@
+{
+  "F12-系统工程研究院": {
+    "code": "26",
+    "name": "F12-系统工程研究院",
+    "parentCode": "1"
+  },
+  "SC13-工业知识部": {
+    "code": "37",
+    "name": "SC13-工业知识部",
+    "parentCode": "8"
+  },
+  "B11-工程研究院": {
+    "code": "17",
+    "name": "B11-工程研究院",
+    "parentCode": "1"
+  },
+  "S07-索为智客": {
+    "code": "23",
+    "name": "S07-索为智客",
+    "parentCode": "1"
+  },
+  "M01-董办": {
+    "code": "43",
+    "name": "M01-董办",
+    "parentCode": "1"
+  },
+  "SC10-数字孪生部": {
+    "code": "27",
+    "name": "SC10-数字孪生部",
+    "parentCode": "8"
+  },
+  "R17-发动机业务部": {
+    "code": "30",
+    "name": "R17-发动机业务部",
+    "parentCode": "4"
+  },
+  "B20-机载工程中心": {
+    "code": "40",
+    "name": "B20-机载工程中心",
+    "parentCode": "6"
+  },
+  "SC-索为云网": {
+    "code": "8",
+    "name": "SC-索为云网",
+    "parentCode": "1"
+  },
+  "B04-KE产品部": {
+    "code": "31",
+    "name": "B04-KE产品部",
+    "parentCode": "13"
+  },
+  "M02-总裁保密办": {
+    "code": "10",
+    "name": "M02-总裁保密办",
+    "parentCode": "1"
+  },
+  "C01-上海工程中心": {
+    "code": "18",
+    "name": "C01-上海工程中心",
+    "parentCode": "6"
+  },
+  "C03-成都工程中心": {
+    "code": "19",
+    "name": "C03-成都工程中心",
+    "parentCode": "6"
+  },
+  "B16-航空事业部": {
+    "code": "5",
+    "name": "B16-航空事业部",
+    "parentCode": "4"
+  },
+  "SC12-业务运营部": {
+    "code": "45",
+    "name": "SC12-业务运营部",
+    "parentCode": "8"
+  },
+  "S09-赛博工软公司": {
+    "code": "11",
+    "name": "S09-赛博工软公司",
+    "parentCode": "4"
+  },
+  "B01-IDE产品部": {
+    "code": "15",
+    "name": "B01-IDE产品部",
+    "parentCode": "13"
+  },
+  "S08-重庆索为公司": {
+    "code": "38",
+    "name": "S08-重庆索为公司",
+    "parentCode": "4"
+  },
+  "R06-军民融合业务部": {
+    "code": "36",
+    "name": "R06-军民融合业务部",
+    "parentCode": "4"
+  },
+  "SC11-业务发展部": {
+    "code": "44",
+    "name": "SC11-业务发展部",
+    "parentCode": "8"
+  },
+  "C05-发动机工程中心": {
+    "code": "7",
+    "name": "C05-发动机工程中心",
+    "parentCode": "6"
+  },
+  "B02-P2M产品部": {
+    "code": "24",
+    "name": "B02-P2M产品部",
+    "parentCode": "13"
+  },
+  "SC03-平台产品部": {
+    "code": "9",
+    "name": "SC03-平台产品部",
+    "parentCode": "8"
+  },
+  "F02-3-综合支持部": {
+    "code": "16",
+    "name": "F02-3-综合支持部",
+    "parentCode": "6"
+  },
+  "F11-客户业务中心": {
+    "code": "4",
+    "name": "F11-客户业务中心",
+    "parentCode": "1"
+  },
+  "B19-工程中心": {
+    "code": "6",
+    "name": "B19-工程中心",
+    "parentCode": "1"
+  },
+  "S02-上海索为": {
+    "code": "33",
+    "name": "S02-上海索为",
+    "parentCode": "4"
+  },
+  "C04-西安工程中心": {
+    "code": "20",
+    "name": "C04-西安工程中心",
+    "parentCode": "6"
+  },
+  "SC14-数据平台部": {
+    "code": "21",
+    "name": "SC14-数据平台部",
+    "parentCode": "8"
+  },
+  "R16-重庆大区": {
+    "code": "46",
+    "name": "R16-重庆大区",
+    "parentCode": "1"
+  },
+  "F06-财务管理部": {
+    "code": "2",
+    "name": "F06-财务管理部",
+    "parentCode": "1"
+  },
+  "B21-平台产品总体部": {
+    "code": "14",
+    "name": "B21-平台产品总体部",
+    "parentCode": "13"
+  },
+  "F03-综合管理部": {
+    "code": "25",
+    "name": "F03-综合管理部",
+    "parentCode": "1"
+  },
+  "C02-武汉工程中心": {
+    "code": "32",
+    "name": "C02-武汉工程中心",
+    "parentCode": "6"
+  },
+  "SC15-PMO办公室": {
+    "code": "28",
+    "name": "SC15-PMO办公室",
+    "parentCode": "8"
+  },
+  "R08-船舶业务部": {
+    "code": "12",
+    "name": "R08-船舶业务部",
+    "parentCode": "4"
+  },
+  "S00-索为系统": {
+    "code": "1",
+    "name": "S00-索为系统",
+    "parentCode": "0"
+  },
+  "S03-杭州杉石科技有限公司": {
+    "code": "3",
+    "name": "S03-杭州杉石科技有限公司",
+    "parentCode": "1"
+  },
+  "F07-人事行政部": {
+    "code": "22",
+    "name": "F07-人事行政部",
+    "parentCode": "1"
+  },
+  "B09-工艺工程中心": {
+    "code": "39",
+    "name": "B09-工艺工程中心",
+    "parentCode": "6"
+  },
+  "F01-平台产品委员会": {
+    "code": "13",
+    "name": "F01-平台产品委员会",
+    "parentCode": "1"
+  },
+  "R04-成都大区": {
+    "code": "29",
+    "name": "R04-成都大区",
+    "parentCode": "4"
+  },
+  "R01-北京大区": {
+    "code": "41",
+    "name": "R01-北京大区",
+    "parentCode": "4"
+  },
+  "R15-航天业务部": {
+    "code": "35",
+    "name": "R15-航天业务部",
+    "parentCode": "4"
+  },
+  "S10-汕头索为公司": {
+    "code": "42",
+    "name": "S10-汕头索为公司",
+    "parentCode": "4"
+  },
+  "B07-IDP产品部": {
+    "code": "34",
+    "name": "B07-IDP产品部",
+    "parentCode": "13"
+  }
+}
