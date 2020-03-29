@@ -1,12 +1,12 @@
-package com.xbcxs.common.client.receiver.jar;
+package com.xbcxs.common.eventclient.event.jar;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(value = {ElementType.TYPE})
+@Target(value = {ElementType.METHOD})
 @Retention(value = RetentionPolicy.RUNTIME)
-public @interface MRBindExchange {
-    String value();
+public @interface ApprovalEventAnnotation {
+
 }

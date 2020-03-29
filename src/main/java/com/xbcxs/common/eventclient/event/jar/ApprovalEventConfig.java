@@ -1,4 +1,4 @@
-package com.xbcxs.common.client.event.jar;
+package com.xbcxs.common.eventclient.event.jar;
 
 public class ApprovalEventConfig {
 

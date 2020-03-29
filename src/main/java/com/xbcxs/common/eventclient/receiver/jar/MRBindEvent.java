@@ -1,4 +1,4 @@
-package com.xbcxs.common.client.receiver.jar;
+package com.xbcxs.common.eventclient.receiver.jar;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

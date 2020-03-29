@@ -1,4 +1,4 @@
-package com.xbcxs.common.client.event;
+package com.xbcxs.common.eventclient.event;
 
 import com.alibaba.fastjson.JSONArray;
 import org.slf4j.Logger;

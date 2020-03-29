@@ -18,7 +18,7 @@ public class TestRestController {
 
     @RequestMapping("page")
     public String page(){
-        log.debug("testRest/page...");
+        log.debug("testRest/page12288...");
         return "staticTest";
     }
 }

@@ -1,4 +1,4 @@
-package com.xbcxs.common.client.receiver.jar;
+package com.xbcxs.common.eventclient.receiver.jar;
 
 public class MRConfig {
 

@@ -1,6 +1,6 @@
-package com.xbcxs.common.client.receiver;
+package com.xbcxs.common.eventclient.receiver;
 
-import com.xbcxs.common.client.receiver.jar.MRConfig;
+import com.xbcxs.common.eventclient.receiver.jar.MRConfig;
 
 public class CustomConfig extends MRConfig {
 

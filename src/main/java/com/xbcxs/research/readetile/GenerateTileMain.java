@@ -13,10 +13,7 @@ import org.jsoup.select.Elements;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.sound.midi.SysexMessage;
 import java.io.IOException;
-
-import static sun.util.logging.LoggingSupport.log;
 
 public class GenerateTileMain {
 

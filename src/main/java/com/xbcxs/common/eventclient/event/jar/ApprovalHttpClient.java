@@ -1,4 +1,4 @@
-package com.xbcxs.common.client.event.jar;
+package com.xbcxs.common.eventclient.event.jar;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

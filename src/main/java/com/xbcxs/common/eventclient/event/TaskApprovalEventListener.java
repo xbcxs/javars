@@ -1,7 +1,7 @@
-package com.xbcxs.common.client.event;
+package com.xbcxs.common.eventclient.event;
 
-import com.xbcxs.common.client.event.jar.ApprovalEventListener;
-import com.xbcxs.common.client.event.jar.ApprovalEventContext;
+import com.xbcxs.common.eventclient.event.jar.ApprovalEventListener;
+import com.xbcxs.common.eventclient.event.jar.ApprovalEventContext;
 
 public class TaskApprovalEventListener extends ApprovalEventListener {
 
